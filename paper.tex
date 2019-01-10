@@ -1,0 +1,106 @@
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[10pt,sigconf]{acmart}
+
+%\usepackage{datetime}
+%\usepackage{hyperref}
+%\usepackage{caption}
+\usepackage{xspace}
+%\usepackage{graphicx}
+\usepackage[binary-units=true]{siunitx}
+%\usepackage{xcolor}
+%\usepackage{paralist}
+\usepackage{subcaption}
+%\usepackage{fontspec}
+%\setmainfont[Ligatures=TeX,Numbers=OldStyle]{Linux Libertine O}
+
+\newcommand{\minios}{Mini-OS\xspace}
+\newcommand{\busybox}{Busy\-Box\xspace}
+\newcommand{\minipython}{Mini\-py\-thon\xspace}
+\newcommand{\micropython}{Micro\-py\-thon\xspace}
+\newcommand{\noop}{\texttt{noop}\xspace}
+\newcommand{\ms}{ms\xspace}
+\newcommand{\sysctl}{\texttt{sysctl}\xspace}
+\newcommand{\kb}{KB\xspace}
+\newcommand{\xl}{\texttt{xl}\xspace}
+\newcommand{\mb}{MB\xspace}
+\newcommand{\gb}{GB\xspace}
+\newcommand{\noxs}{\texttt{noxs}\xspace}
+\newcommand{\splittoolstack}{split toolstack\xspace}
+\newcommand{\chaos}{\texttt{chaos}\xspace}
+\newcommand{\tinyx}{Tinyx\xspace}
+\newcommand{\xenconsoled}{\texttt{xenconsoled}\xspace}
+\newcommand{\xenstore}{XenStore\xspace}
+\newcommand{\clickos}{ClickOS\xspace}
+\newcommand{\unipredict}{Unipredict\xspace}
+\newcommand{\lightvm}{LightVM\xspace}
+\newcommand{\xendevd}{\texttt{xendevd}\xspace}
+\newcommand{\TODO}[1]{\textbf{\textcolor{red}{#1}}}
+
+% Actual document begins below.
+\begin{document}
+
+\title{The Case for the Edge AI Cloud}
+
+%\author{Filipe Manco$^*$, Costin Lupu$^\dagger$, Florian Schmidt$^*$, Jose Mendes$^*$, Simon Kuenzer$^*$, Sumit Sati$^*$, Kenichi Yasukata$^*$, Costin Raiciu$^\dagger$, Felipe Huici$^*$}
+\author{Cheng Wang}
+\affiliation{\institution{University of Hong Kong}}
+\email{???}
+\author{Felipe Huici}
+\affiliation{\institution{NEC Laboratories Europe}}
+\email{felipe.huici@neclab.eu}
+\author{Nicolas Weber}
+\affiliation{\institution{NEC Laboratories Europe}}
+\email{nicolas.weber@neclab.eu}
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+
+%% \begin{CCSXML}
+%% 	<ccs2012>
+%% 	<concept>
+%% 	<concept_id>10011007.10010940.10010941.10010942.10010948</concept_id>
+%% 	<concept_desc>Software and its engineering~Virtual machines</concept_desc>
+%% 	<concept_significance>500</concept_significance>
+%% 	</concept>
+%% 	<concept>
+%% 	<concept_id>10011007.10010940.10010941.10010949</concept_id>
+%% 	<concept_desc>Software and its engineering~Operating systems</concept_desc>
+%% 	<concept_significance>300</concept_significance>
+%% 	</concept>
+%% 	</ccs2012>
+%% \end{CCSXML}
+
+%% \ccsdesc[500]{Software and its engineering~Virtual machines}
+%% \ccsdesc[300]{Software and its engineering~Operating Systems}
+%% \keywords{Virtualization, unikernels, specialization, operating systems, Xen, containers, hypervisor, virtual machine.}
+
+%% \copyrightyear{2017}
+%% \acmYear{2017}
+%% \setcopyright{rightsretained}
+%% \acmConference[SOSP '17]{SOSP '17: ACM SIGOPS 26th Symposium on Operating Systems Principles}{October 28, 2017}{Shanghai, China}
+%% \acmDOI{10.1145/3132747.3132763}
+%% \acmISBN{978-1-4503-5085-3/17/10}
+
+\maketitle
+
+\TODO{Check that the acmart template is up to date. It was taken from an older paper.}
+\input{introduction}
+\input{requirements}
+\input{implementation}
+\input{evaluation}
+\input{relatedwork}
+\input{conclusion}
+
+%\begin{acks}
+%This paper has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement no.\ 671566 (``Superfluidity'').
+%This paper reflects only the author's views and the European Commission is not responsible for any use that may be made of the information it contains.
+%\end{acks}
+
+\bibliographystyle{acm}
+\bibliography{references.bib}
+
+\end{document}
+
+
